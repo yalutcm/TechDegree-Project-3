@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="A demo online registration form, with accessability in mind.">
+  <title>Form By Tulay | A Demo Online Registration Form</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+  <body>
+    <div class="top">
+      <header>
+          <h2> The Code Review </h2>
+      </header>
+
+      <div class="sign up">
+        <h4> Signup for our news letter</h4>
+        <p> Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </div>
+
+<!-- Main Section -->
+<main>
+  <form action="index.html" method="post">
+    <div class="border bottom"> </div>
+    <fieldset class="contact">
+      <legend>Contact Information</legend>
+      <div class="cwrap">
+
+        <div class="input_div cinfo">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="required*" name="user_name" required class="input_design">
+        </div>
+
+        <div class="input_div cinfo">
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail"  placeholder="required*" name="mail" required class="input_design">
+        </div>
+
+        <div class="input_div cinfo">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g (269)-101-9870" required class="input_design">
+        </div>
+
+        <div class="input_div cinfo">
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="street" placeholder="e.g 1004 Michigan Ave" required class="input_design">
+        </div>
+
+        <div class="input_div cinfo">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="e.g Indianapolis" required class="input_design">
+        </div>
+
+      <div class="state_div cinfo">
+        <label for="states">State</label>
+        <select id="states" name="list_states" class="input_design">
+        <!-- States From Letters A-I -->
+          <optgroup label="A-I">
+             <option value="" disabled selected hidden>Select State</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona"> Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+          </optgroup>
+      <!-- States From Letters J-Q -->
+          <optgroup label="J-Q">
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Lousiana">Lousiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+          </optgroup>
+      <!-- States From Letters R-Z -->
+          <optgroup label="R-Z">
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+          </optgroup>
+        </select>
+      </div>
+
+        <div class="zip_div cinfo">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip_code" placeholder="e.g 90210" required class="input_design">
+        </div>
+
+      </div>
+    </fieldset>
+
+    <div class="bottom"> </div>
+
+    <div class="news wrap">
+      <fieldset>
+        <legend>Newsletter</legend>
+        <span>Select the news letter you will like to receive</span>
+
+        <div class="news_input">
+          <input type="checkbox" id="nhtml" value="news_html" name="cb_inpt">
+          <label for="nhtml">HTML News</label>
+        </div>
+
+        <div class="news_input">
+          <input type="checkbox" id="css" value="news_css" name="cb_inpt">
+          <label for="css">CSS News</label>
+        </div>
+
+        <div class="news_input">
+          <input type="checkbox" id="java" value="script" name="cb_inpt">
+          <label for="java">Javascript News</label>
+        </div>
+
+        <p>Newsletter format</p>
+
+        <div class="rbutton news_input">
+          <input type="radio" id="html" value="html" name="format_opt">
+          <label for="html">HTML</label>
+        </div>
+
+        <div class="rbutton news_input">
+          <input type="radio" id="plaintext" value="text" name="format_opt">
+          <label for="plaintext">Plain text</label>
+        </div>
+
+        <label class="topics" for="other_topics">Other topics you'd like to hear about</label>
+
+        <textarea id="other_topics" name="user_bio" placeholder="Let's hear it..." class="input_design"></textarea>
+
+        <button class="input_design" type="submit"> Sign Up </button>
+      </fieldset>
+    </div>
+  </form>
+
+    <footer>
+      <p> Copyright The Code Review </p>
+    </footer>
+
+</main>
+</body>

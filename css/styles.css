@@ -1,0 +1,201 @@
+*{ box-sizing: border-box;}
+/*-----------------------------------------------
+  Base Styles - Mobile First
+-----------------------------------------------*/
+/* Center the main contents */
+  main
+  { max-width: 869px;
+    width: 100%;}
+
+/* Google Fonts + page margin/centering */
+  body, h2, main, h4
+  { margin: 0 auto;
+    font-family: 'EB Garamond', serif}
+/* Top header styles */
+  header
+  { text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;}
+/* NL Format Text Size*/
+  div.sign h4
+  { font-size: 1.6rem;}
+
+  h4:hover
+  { transform: translate(2rem);
+    cursor: wait;}
+
+/* Header bottom margin */
+  div.top
+  { margin-bottom: 1.4rem;}
+
+/* Signup title & text margin/center align */
+  .sign.up p, div.sign
+  { margin: .6rem 0 .2rem 0;
+    text-align: center;}
+
+/* Border Styles */
+  div.border
+  { border-top: 3px solid #417788;
+    margin-bottom: 5rem;}
+
+  div.bottom
+  { border-bottom: 1px solid #417788;
+    padding-bottom: 0.2em;
+    margin: 1rem .8rem;}
+
+/* Fieldset bottom margin + borders remove  */
+  legend, input, select
+  { margin-bottom: 0.6rem;}
+  fieldset
+  { border: none;}
+
+/* Form & CI Section Flexbox */
+  form, div.sign.up, div.zip_code, main
+  { display: flex;
+    flex-direction: column;}
+
+/* placeholder styles */
+  ::placeholder
+  { text-align: right;
+    color: #182d34;}
+
+/* CI Input Field Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select[class="input_design"]
+  { width: 100%;
+    padding: .6rem;
+    border-radius: .4rem;}
+/* Input fields top margin */
+  input, select
+  { margin-top: .2rem;}
+/* Legends styles */
+  legend
+  { font-size: 1.4rem;}
+
+/* Zip styles */
+  .zip_div
+  { width: 50%;
+    align-items: flex-end;}
+
+/* NL Span Style */
+  span
+  { font-size: 1.1rem;}
+
+/* NL options + text area margins */
+  .news_input, textarea
+  { margin: .6rem 0 .6rem 0;}
+
+/* Textarea input field sizing */
+  textarea#other_topics, button
+  { width: 100%;
+    padding: 1.8rem;
+    border-radius: 0.4rem;}
+
+  textarea::placeholder
+  {text-align: left;}
+
+
+/* footer styles */
+  footer
+  { text-align: center;
+    font-style: italic;
+    color: grey;}
+
+/*-----------------------------------------------
+  Medium Screen Size - 768px
+-----------------------------------------------*/
+@media only screen and (min-width: 768px)
+{
+/* CI Flexbox + labels alignment */
+  .cinfo
+  { display: flex;
+    flex-direction: row;
+    align-items: center}
+/* Add width to labels/input field alignment */
+  .cinfo label
+  { flex-basis: 16%;}
+/* Stretches input field to the right  */
+  .cinfo input,
+  .cinfo select
+  { flex-basis: 84%;}
+/* keeps zip input width within border area */
+  .zip_div
+  { width: initial;}
+  .zip_div input
+  { max-width: 25%;}
+/* Make button smaller */
+  button
+  { padding: 1rem;}
+}
+/*-----------------------------------------------
+    DRY Styles / Page Design / Accessability Styles
+-----------------------------------------------*/
+/* Body background */
+  body
+  { background-image:
+    linear-gradient(to bottom right, #4b4b4b, #252726);}
+
+  form
+  { background: silver;
+    border-radius: .4rem;}
+
+/* Header /  Top Section */
+  header
+  { background-image:
+    repeating-linear-gradient(to right, #05354d, #db9dbe, #c49cdf, #05354d);
+    color: white;}
+
+  header::first-letter
+  { color: #db9dbe;
+    padding: .4rem .6rem;
+    background: #05354d;
+    border-radius: .4rem;}
+
+  .up h4, legend, .up p
+  { color: white;
+    height: 54%;
+    text-shadow: 2px 2px 2px #1e434f;}
+
+/* border styles */
+  .input_design
+  { border-radius: .2rem;
+    border: .14rem solid #417788;
+    box-shadow: 2px 2px 4px rgb(200, 200, 200);}
+
+/* focus for input fields */
+  input:focus,select:focus,
+  textarea:focus
+  { text-align: left;
+    border: solid .2rem orange;
+    background:#f6e0ca;
+    transition: border 2s, background 2s, transform 2s;}
+
+/* input shadows hover + textarea shadows */
+  .cinfo > input:hover, textarea#other_topics
+  { box-shadow:
+    inset 2px 2px 4px rgb(200, 200, 200);}
+
+  textarea:hover
+  { background:#f6e0ca;}
+
+  label
+  { color: #1e434f;}
+
+  label:focus
+  {color:#c49cdf;}
+
+/* Submit Button Design*/
+  button[type="submit"]
+  { border-radius: 0.4rem;
+    background-image:
+    repeating-linear-gradient(to right, #05354d, #db9dbe, #c49cdf, #05354d);
+    color: white;
+    font-size: large;
+    font-weight: 800;
+    cursor: pointer;}
+
+/* Box Shadows */
+  form, header
+  { box-shadow: inset 0 3em 3em rgba(0,0,0,0.1);}
